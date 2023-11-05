@@ -23,17 +23,50 @@ html {
     margin-right: 2.4rem;
 }
 
+.banner * {
+    width: 100%;
+}
+
 h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
 a,
 p {
     font-size: 1.6rem;
     font-weight: 200;
+    line-height: 1.6;
 }
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+}
+
+.viewport {
+    display: flex;
+    max-width: 1600px;
+    padding: 32px 24px;
+    align-items: center;
+}
+
+
 
 /* HEADER */
 
@@ -77,10 +110,6 @@ nav li {
 
 .hero {
     margin-top: 6.4rem;
-    display: flex;
-    width: 100%;
-    padding: 32px 24px;
-    align-items: center;
 }
 
 .banner-content {
@@ -107,4 +136,59 @@ nav li {
     font-weight: 500;
 }
 
-/*  */
+/* FEATURED */
+
+/* MAIN ARTICLE */
+
+.banner h2 {
+    margin: 32px 0px 24px 0px;
+}
+
+.banner .author {
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+/* SIDEBAR POSTS */
+
+.sidebar {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* border-left: solid 1px lightgray; */
+}
+
+.sidebar .posts {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    border: 1px lightgrey solid;
+    margin-bottom: 4px;
+    transition: background-color 300ms linear;
+}
+
+.posts.posts:hover {
+    background-color: lightgrey;
+}
+
+.sidebar .posts img {
+    width: 35%;
+}
+
+.sidebar .posts .post-info {
+    width: 65%;
+    padding: 24px;
+}
+
+.post-info p {
+    margin: 8px 0px;
+}
+
+.post-info a {
+    color: rgb(53, 139, 250);
+    font-weight: 500;
+}
+
+.post-info a:hover {
+    color: blue;
+}
